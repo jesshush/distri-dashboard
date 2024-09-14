@@ -1,0 +1,56 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set global font and text settings */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Set a basic container for your content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+}
+
+/* Style links */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Set up a basic layout for main sections */
+header, footer {
+    background-color: #5cabff;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Chart-specific styles */
+.chart-container {
+    position: relative;
+    width: 100%; /* Make the container take full width */
+    height: 400px; /* Adjust height as needed */
+    background-color: #fff; /* Optional: background color for better visibility */
+}
+
+.chart-container canvas {
+    width: 100% !important; /* Make the canvas responsive */
+    height: 100% !important;
+}

@@ -1,0 +1,202 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem !important;
+    margin-bottom: 15px !important;
+    color: #ffffff !important;
+    font-weight: 680 !important;
+}
+
+h5 {
+    font-size: 1.5rem !important;
+    margin-bottom: 15px !important;
+    color: #153759 !important;
+    font-weight: 680 !important;
+}
+
+/* Detail Section */
+.detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail ul li {
+    padding: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.detail ul li:last-child {
+    border-bottom: none;
+}
+
+/* Card Component */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead tr th {
+    background-color: #153759 !important;
+    color: #fff !important;
+}
+
+/* Detailed Card Component */
+.detailCard {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detailCard h5 {
+    font-size: 1.2rem !important;
+    margin-bottom: 15px !important;
+    color: #153759 !important;
+    font-weight: 680 !important;
+}
+
+.detailCard h6 {
+    font-size: 1.2rem !important;
+    margin-bottom: 15px !important;
+    font-weight: 680 !important;
+}
+
+.detailCard p {
+    font-size: 1.2rem !important;
+    margin-bottom: 15px !important;
+    color: black !important;
+    font-weight: 580 !important;
+}
+
+/* Notification Styles */
+.notifications li {
+    padding: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: #f8f9fa;
+}
+
+/* Tracking Details */
+.trackingDetails {
+    max-width: 500px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+/* Scrollbar Styling */
+.trackingDetails::-webkit-scrollbar {
+    width: 8px;
+}
+
+.trackingDetails::-webkit-scrollbar-thumb {
+    background-color: rgba(200, 200, 200, 0.6);
+    border-radius: 10px;
+}
+
+.trackingDetails::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Title Box */
+.titleBox {
+    background-color: #153759;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments for Title Box */
+@media (max-width: 768px) {
+    .titleBox {
+        height: 200px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .titleBox {
+        height: 180px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* Base Button Style */
+button,
+.orderButton,
+.showMoreButton {
+    background-color: #153759 !important;
+    color: #ffffff !important;
+    border: 1px solid #153759 !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hover Effect for Buttons */
+button:hover,
+.orderButton:hover,
+.showMoreButton:hover {
+    background-color: #ffffff !important;
+    color: #153759 !important;
+    border-color: #153759 !important;
+}
+
+/* Responsive Adjustments for Order Button */
+@media (min-width: 768px) {
+    .titleBox {
+        flex-direction: row;
+    }
+
+    .orderButton {
+        position: absolute;
+        bottom: 20px !important;
+        right: 50px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .orderButton {
+        position: relative;
+        bottom: auto !important;
+        right: auto !important;
+        margin-top: 20px;
+    }
+}
